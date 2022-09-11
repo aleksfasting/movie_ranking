@@ -40,6 +40,9 @@ What movie do you want to rank?
             rating1 = int(newR1)
             movieDict[movie2] = int(newR2)
         movieDict[movie1] = rating1
+        rank = sorted(movieDict.items(), key = lambda item: item[1])
+        for i in range(len(movieDict)):
+            print(rank[i])
 
 def rankingMovie():
 
